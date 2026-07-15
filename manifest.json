@@ -1,0 +1,10 @@
+{
+  "name": "여긴 어디역?",
+  "short_name": "역 찾기",
+  "description": "지하철 노선도에서 역 이름을 맞히는 퀴즈",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3182F6",
+  "icons": []
+}
