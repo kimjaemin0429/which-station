@@ -2152,6 +2152,15 @@ $('btnHint1').onclick = ()=>useHint(1);
 $('btnHint2').onclick = ()=>useHint(2);
 $('btnGiveup').onclick = giveUp;
 
+// 결과화면에서 백그라운드 → 포그라운드 복귀 시 홈으로 이동
+document.addEventListener('visibilitychange', ()=>{
+  if(document.visibilityState === 'visible' && G.over){
+    G.over = false;
+    updateBestLine();
+    show('scrHome');
+  }
+});
+
 // 스플래시 페이드아웃
 setTimeout(()=>{
   const sp = document.getElementById('splash');
